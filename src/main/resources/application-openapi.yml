@@ -1,0 +1,18 @@
+springdoc:
+  packages-to-scan: com.polarbear.feigndemo
+  swagger-ui:
+    enabled: true
+    path: /swagger-ui.html
+    filter: true
+    display-request-duration: true
+    default-models-expand-depth: 3
+    default-model-rendering: example
+    doc-expansion: list
+    tags-sorter: alpha
+  api-docs:
+    enabled: true
+    path: /api-docs
+    groups:
+      enabled: true
+  cache:
+    disabled: true

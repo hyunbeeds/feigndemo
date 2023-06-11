@@ -1,0 +1,18 @@
+management:
+  security.enabled: false
+  server.port: 9113
+  endpoints:
+    web:
+      exposure.include: health, prometheus
+      base-path: /
+      path-mapping:
+        prometheus: /metrics
+        health: /health
+  endpoint:
+    health:
+      show-details: always
+
+server:
+  tomcat:
+    mbeanregistry:
+      enabled: true

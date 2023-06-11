@@ -1,0 +1,16 @@
+spring:
+  profiles:
+    active: local
+    include: actuator, openapi, feign, resttemplate
+  application:
+    name: feigndemo
+
+logging.level.root: DEBUG
+
+server:
+  port: 10111
+  shutdown: graceful
+  error:
+    whitelabel:
+      enabled: false
+
